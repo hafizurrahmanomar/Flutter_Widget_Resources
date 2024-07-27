@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: const ThemeDataPage(),
       theme: ThemeData(
+        brightness: Brightness.dark,
         useMaterial3: true,
         fontFamily: 'Roboto',
         colorSchemeSeed: Colors.blue,
@@ -73,11 +74,15 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      //themeMode: ThemeMode.light,
-      //themeMode: ThemeMode.dark,
+
+/*
       darkTheme:ThemeData(
         brightness: Brightness.dark,
+        primarySwatch: Colors.deepPurple,
       ),
+      //themeMode: ThemeMode.dark,
+
+ */
     );
   }
 }
