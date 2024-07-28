@@ -33,7 +33,9 @@ class _HomeScreenState extends State<HomeScreen> {
     // print(MediaQuery.of(context).size.shortestSide);
     // print(MediaQuery.of(context).displayFeatures);
     // print(MediaQuery.of(context).devicePixelRatio);
-    //
+    double myHeight = MediaQuery.of(context).size.height;
+   // double myWidth = MediaQuery.of(context).size.width;
+    double myWidth = MediaQuery.sizeOf(context).width;
     print(MediaQuery.sizeOf(context));
     print(MediaQuery.orientationOf(context));
     print(MediaQuery.devicePixelRatioOf(context));
