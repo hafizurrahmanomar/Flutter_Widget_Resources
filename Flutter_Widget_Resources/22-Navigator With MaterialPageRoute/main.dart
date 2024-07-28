@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// KISS - Keep It Simple, Stupid
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: Text('Home'),
       ),
       body: Center(
         child: Column(
@@ -48,13 +48,13 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const SettingsScreen(userName: 'Hafiz',),
+                    builder: (context) => SettingsScreen(userName: 'Saira',),
                   ),
                 ).then((value) {
                   print(value);
                 });
               },
-              child: const Text('Go to Settings'),
+              child: Text('Go to Settings'),
             )
           ],
         ),
@@ -73,7 +73,7 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Settings'),
+        title: Text('Settings'),
       ),
       body: Center(
         child: Column(
@@ -85,32 +85,32 @@ class SettingsScreen extends StatelessWidget {
               onPressed: () {
                 /// Back to previous screen
                 Navigator.pop(context, {
-                  'Hafiz' : 36
+                  'Saira' : 12
                 });
               },
-              child: const Text('Back to Home'),
+              child: Text('Back to Home'),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const ProfileScreen(),
+                    builder: (context) => ProfileScreen(),
                   ),
                 );
               },
-              child: const Text('Go to Profile'),
+              child: Text('Go to Profile'),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const ProfileScreen(),
+                    builder: (context) => ProfileScreen(),
                   ),
                 );
               },
-              child: const Text('Go to Profile by replace'),
+              child: Text('Go to Profile by replace'),
             ),
           ],
         ),
