@@ -43,9 +43,7 @@ class MyHomePage extends StatelessWidget {
           SizedBox(
             height: 200.0,
             width: 200.0,
-
             child: FractionallySizedBox(
-
               widthFactor: 0.5,
               heightFactor: 0.5,
               alignment: Alignment.center,
@@ -53,7 +51,7 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
         ],
-          ///SizeBox Practice End
+        ///SizeBox Practice End
 
       ),
     );
