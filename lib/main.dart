@@ -1,61 +1,159 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Hello World',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Expanded,SizeBox'),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(),
     );
   }
 }
 
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
 
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
 
+class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      body: SingleChildScrollView(
+        child: Stack(
+          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
 
-        title: Text(title),
-      ),
-      body: const Column(
-
-        children: [
-          SizedBox(
-            height: 200.0,
-            width: 200.0,
-            child: Text(
-              "Size Box Practice",
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+            Container(
+              color: Colors.green,
+              height: 400,
+              width: 400,
             ),
-          ),
-          SizedBox(
-            height: 200.0,
-            width: 200.0,
 
-            child: FractionallySizedBox(
-
-              widthFactor: 0.5,
-              heightFactor: 0.5,
-              alignment: Alignment.center,
-              child: Text("FractionallySizedBox Practice"),
+            Positioned(
+              left: 125,
+              top: 125,
+              child: Container(
+                color: Colors.red,
+                height: 125,
+                width: 125,
+              ),
             ),
-          ),
-        ],
-          ///SizeBox Practice End
+            Positioned.fill(
+              child: Align(
+                // Other Option available
+                alignment: Alignment.topCenter,
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.purple,
+                ),
+              ),
+            ),
 
+          ],
+        ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
