@@ -1,28 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_resources/home_screen.dart';
+import 'package:flutter_widget_resources/todo_app.dart';
 
-
-void main()=> runApp(const SumApp());
-
-class SumApp extends StatelessWidget {
-  const SumApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return  MaterialApp(
-      theme: ThemeData(
-        elevatedButtonTheme:ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.symmetric(
-                  horizontal: 20, vertical: 15),
-              backgroundColor: Colors.pinkAccent,
-              foregroundColor: Colors.white,
-              textStyle: const TextStyle(
-                  fontSize: 25, fontWeight: FontWeight.bold)),
-        ),
-      ),
-      debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
-    );
-  }
+void main(){
+  runApp(const TodoApp());
 }
+
+

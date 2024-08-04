@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_resources/home_screen.dart';
+
+import '../02.1-Text/main.dart';
+
 
 
 void main()=> runApp(const SumApp());

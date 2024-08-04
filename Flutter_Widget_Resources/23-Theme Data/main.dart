@@ -50,6 +50,7 @@ class MyApp extends StatelessWidget {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
+            textStyle: const TextStyle(fontSize: 18.0,fontWeight: FontWeight.w700),
             //backgroundColor: AppColors.themeColor,
             backgroundColor: Colors.deepPurple,
             padding: const EdgeInsets.symmetric(vertical: 12),
