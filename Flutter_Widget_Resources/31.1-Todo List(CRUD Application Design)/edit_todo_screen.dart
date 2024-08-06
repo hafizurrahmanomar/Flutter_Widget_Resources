@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../31.2-Todo List(CRUD Logical Part)/todo.dart';
+
 class EditTodoScreen extends StatefulWidget {
-  const EditTodoScreen({super.key});
+   const EditTodoScreen({super.key, required this.todo});
 
   @override
   State<EditTodoScreen> createState() => _EditTodoScreenState();
+  final Todo todo ;
 }
 
 class _EditTodoScreenState extends State<EditTodoScreen> {

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_resources/add_new_todo_screen.dart';
-import 'package:flutter_widget_resources/edit_todo_screen.dart';
+
+import '../31.2-Todo List(CRUD Logical Part)/add_new_todo_screen.dart';
+import '../31.2-Todo List(CRUD Logical Part)/edit_todo_screen.dart';
+
 
 class TodoListScreen extends StatefulWidget {
   const TodoListScreen({super.key});
@@ -37,12 +39,12 @@ class _TodoListScreenState extends State<TodoListScreen> {
                 ),
                 IconButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const EditTodoScreen(),
-                      ),
-                    );
+                    //Navigator.push(
+                      //context,
+                      //MaterialPageRoute(
+                        //builder: (context) =>  const EditTodoScreen(),
+                      //),
+                    //);
                   },
                   icon: const Icon(Icons.edit),
                 ),
