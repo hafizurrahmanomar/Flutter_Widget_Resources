@@ -74,7 +74,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
       ),
     );
   }
-
+/// Code Refactoring
   void showDeleteConfirmationDialog() {
     showDialog(
         barrierDismissible: false,
