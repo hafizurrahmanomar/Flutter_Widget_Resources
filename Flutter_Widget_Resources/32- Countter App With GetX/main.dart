@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_resources/counter_app.dart';
+
+import 'counter_app.dart';
+
 
 void main(){
   runApp(const CounterApp());

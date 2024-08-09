@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_resources/add_new_todo_screen.dart';
-import 'package:flutter_widget_resources/edit_todo_screen.dart';
-import 'package:flutter_widget_resources/todo.dart';
+
+
+import '../31.1-Todo List(CRUD Application Design)/add_new_todo_screen.dart';
+import '../31.1-Todo List(CRUD Application Design)/edit_todo_screen.dart';
+import 'todo.dart';
 
 class TodoListScreen extends StatefulWidget {
   const TodoListScreen({super.key});

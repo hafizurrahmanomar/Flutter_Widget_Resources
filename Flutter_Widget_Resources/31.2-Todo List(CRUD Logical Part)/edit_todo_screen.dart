@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_resources/todo.dart';
+
+
+import 'todo.dart';
 
 class EditTodoScreen extends StatefulWidget {
   const EditTodoScreen({super.key, required this.todo});

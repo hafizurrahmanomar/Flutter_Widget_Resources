@@ -1,30 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+
+import 'counter_screen.dart';
 
 
-import '../31.2-Todo List(CRUD Logical Part)/todo_list_screen.dart';
 
-class TodoApp extends StatelessWidget {
-  const TodoApp({super.key});
+class CounterApp extends StatelessWidget {
+  const CounterApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: const TodoListScreen(),
+    return GetMaterialApp(
+      home: const CounterScreen(),
       theme: ThemeData(
-        colorSchemeSeed: Colors.lightBlueAccent,
-        appBarTheme: const AppBarTheme(
+        appBarTheme:  const AppBarTheme(
           iconTheme: IconThemeData(color: Colors.white),
           centerTitle: true,
           backgroundColor: Colors.lightBlueAccent,
           titleTextStyle: TextStyle(
               fontWeight: FontWeight.w600, fontSize: 18, color: Colors.white),
         ),
+
         inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(
-          borderSide: const BorderSide(color: Colors.lightBlueAccent),
-          borderRadius: BorderRadius.circular(8),
-        ),
+            borderSide: const BorderSide(color: Colors.lightBlueAccent),
+            borderRadius: BorderRadius.circular(8),
+          ),
           enabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: Colors.lightBlueAccent),
             borderRadius: BorderRadius.circular(8),
@@ -56,8 +57,13 @@ class TodoApp extends StatelessWidget {
             ),
           ),
         ),
-
       ),
+
     );
   }
 }
+
+
+
+
+
