@@ -7,5 +7,17 @@ https://pub.dev/packages/device_preview
 sizer
 https://pub.dev/packages/sizer
 ===================================
+//Date Formatting and Parsing
+
+intl
+https://pub.dev/packages/intl
+===================================================
 DateFormater
 https://pub.dev/packages/intl/versions/0.19.0
+=============================================
+//GetX is an extra-light and powerful solution for Flutter. It combines high-performance state management,
+ intelligent dependency injection, and route management quickly and practically.
+
+get
+https://pub.dev/packages/get/install
+=======================================================================================
