@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_resources/product_list_screen.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-
 
 class CRUDApp extends StatelessWidget {
   const CRUDApp({super.key});
@@ -32,7 +30,7 @@ class CRUDApp extends StatelessWidget {
             ),
           )
       ),
-      home: const ProductListScreen(),
+      home:  ProductListScreen(),
     );
   }
 }

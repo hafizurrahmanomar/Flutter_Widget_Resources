@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_resources/product_list_screen.dart';
+import 'product_list_screen.dart';
 
 class CRUDApp extends StatelessWidget {
   const CRUDApp({super.key});
